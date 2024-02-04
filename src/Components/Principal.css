@@ -1,95 +1,188 @@
-
 header {
-    height: 50x;
-    /* background: #AED6F1; */
-    background: #5584AC;
-    padding: 0 50px;
-    color: black;
-    /*Aplicamos el display flex*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 50x;
+  background: #5584AC;
+  padding: 0 50px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .logo {
-    text-transform: uppercase;
-    font-weight: 200;
+  text-transform: uppercase;
+  font-weight: 200;
 }
+
 .menu a {
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-    /*0 px de arriba y de izquierda y derecha de 10 px*/
-    padding: 0 10px;
-    transition: 0.4s;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
 }
-.select{
-    background-color:  aqua;
-    border-radius: 50%;
+
+.select {
+  background-color: aqua;
+  border-radius: 50%;
 }
+
 .mostrar-menu,
 .esconder-menu {
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-    transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
 }
-/* Otras de las opciones que nos da el flex box es que podemos poner un orden */
+
 .mostrar-menu {
-    order: 1;
+  order: 1;
 }
+
 .menu a:hover,
 .mostrar-menu a:hover,
 .esconder-menu a:hover {
-    color: #FDFEFE;
+  color: #FDFEFE;
 }
+
 #check {
-    display: none;
+  display: none;
 }
-  
- /* Media Query para mostrar el icono de hamburguesa en pantallas pequeñas */
-@media screen and (max-width: 768px) {
-    .mostrar-menu,
-    .esconder-menu {
-        display: block;
-    }
-    .menu {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #AED6F1;
-        right: -100%;
-        top: 0;
-        text-align: center;
-        padding: 100px 0px;
-        z-index: 100;
-        transition: 0.8s;
-    }
-    .menu a {
-        display: block;
-        padding: 20px;
-    }
-    .esconder-menu {
-        position: absolute;
-        top: 40px;
-        right: 40px;
-    }
-    #check:checked~.menu {
-        right: 0;
-    }
+
+
+@media screen and (max-width: 900px) {
+
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
   }
 
-  
-  
-.footer {
-    background-color: #5584AC;
-    color: white;
-    text-align: center;
-    padding: 10px;
+  .menu {
     position: fixed;
-    bottom: 0;
     width: 100%;
+    height: 100vh;
+    background: #AED6F1;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
   }
-  @media screen and (max-width: 768px) {
+
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #check:checked~.menu {
+    right: 0;
+  }
+}
+
+.formulario {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #5584AC;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.tablaResultados {
+  
+  align-items: center;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #5584AC;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: grid;
+  overflow:scroll;
+
+}
+.tablaResultados table, .tablaResultados th, .tablaResultados td{
+ 
+
+  border-collapse: collapse;
+  border: 1px solid white;
+  
+}
+
+.tablaResultados th{
+  padding: 10px;
+}
+
+.tablaResultados td{
+  padding: 10px;
+}
+
+
+.tablaResultados li{
+
+  padding-bottom: 10px;
+  background-color: white;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  
+}
+
+.tablaResultados ul{
+
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+.celdaCabecera{
+  width: 100px;
+}
+
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.footer {
+  background-color: #5584AC;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
   .footer {
     background-color: #5584AC;
     color: white;
@@ -98,38 +191,4 @@ header {
     margin-top: auto;
     width: 100%;
   }
-  }
-
-
-  .formulario {
-    max-width: 300px;
-    margin: auto;
-    margin-top: 30px;
-    background-color: #5584AC;
-    padding: 30px;
-    border-radius: 8px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    color: white;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
+}

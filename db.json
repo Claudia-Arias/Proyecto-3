@@ -1,12 +1,44 @@
 {
-    "usuarios": [
-        {
-            "nombre": "claudia",
-            "edad": 45
-        },
-        {
-            "nombre": "clau",
-            "edad": 45
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "nombre": "claudia",
+      "apellido1": "Arias",
+      "apellido2": "lopez",
+      "email": "marcearias@yahoo.com",
+      "telefono": "607592502"
+    },
+    {
+      "id": "2",
+      "nombre": "valen",
+      "apellido1": "Diaz",
+      "apellido2": "Arias",
+      "email": "marce@yahoo.com",
+      "telefono": "607592509"
+    },
+    {
+      "id": "e8b2",
+      "nombre": "angi",
+      "apellido1": "perez",
+      "apellido2": "donato",
+      "email": "marte@gmail.com",
+      "telefono": "123456"
+    },
+    {
+      "id": "184b",
+      "nombre": "Blankita",
+      "apellido1": "Gonzalez",
+      "apellido2": "Figueredo",
+      "email": "blank@gmail.com",
+      "telefono": "236523698"
+    },
+    {
+      "id": "6a37",
+      "nombre": "paola",
+      "apellido1": "perez",
+      "apellido2": "gonzalez",
+      "email": "madremia@gmail.com",
+      "telefono": "23456"
+    }
+  ]
 }
